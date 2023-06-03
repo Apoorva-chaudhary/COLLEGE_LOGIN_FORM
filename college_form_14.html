@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACET FORM</title>
+    <link rel="stylesheet" href="testform.css">
+    <style>
+        body {
+            background-image: url("Screenshot\ \(133\).png");
+            background-repeat: no-repeat;
+            background-size: 1366px 657px;
+
+        }
+
+        #left {
+            /* border: 2px solid red; */
+            background-image: url("Screenshot\ \(130\).png");
+            width: 134px;
+            height: 134px;
+            background-size: 134px 134px;
+            position: absolute;
+            top: 62px;
+            left: 56px;
+        }
+        
+        
+        #header{
+            text-align: center;
+            font-weight: bolder;
+            font-size: xx-large;
+            color: rgb(3, 19, 24);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        #clumbs{
+            background-color: black;
+            border-radius: 14px;
+            overflow: auto;
+            height: 54px;
+        }
+        .clumb{
+            float: left;
+        }
+        .clumb a{
+            padding:4px 50px;
+            color: aliceblue;
+             text-decoration: none;
+            } 
+            .clumb a:hover{
+                color: red;
+            }
+            .clumb img{
+                color: aliceblue;
+                width: 22px;
+                height: 22px;
+            }
+            #li1{
+                padding-left:2px ;
+            }
+            .Search{
+            float:right;
+            color: white;
+            padding: 1px 39px;
+            border-radius: 4px;
+        }    
+        
+       
+        </style>
+</head>
+
+<body>
+    <header>
+        
+        <nav id="clumbs">
+            <ol>
+                <li class="clumb" id="li1"><a> Home</a></li>
+                <li class="clumb"><a href="courses.html" class="ccp">Courses</a></li>
+                <li class="clumb"><a href="about_us.html" class="ccp">About us</a></li>
+                <li class="clumb"><a href="https://www.acetup.org" class="ccp">Help</a></li>
+                <div class="Search">
+                    <input type="text" name="Search" id="Search" placeholder="search this website">
+                </div>
+            </ol>
+        </nav>
+    </header>
+       <p id="header">ALIGARH COLLEGE OF ENGINEERING AND TECHNOLOGY</p> 
+    <div id="left">
+
+    </div>
+    <div class="login-box">
+        <h2>Book your seat today!</h2>
+        
+        <form action="/" method="POST">
+          <div class="user-box">
+            <input type="text" name="name" required="">
+            <label>Candidate Name</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="email" required="">
+            <label>Father's Name</label>
+          </div>
+          <div class="user-box">
+            <input type="number" name="cno" required="">
+            <label>Contact number</label>
+          </div>
+          <a href="/" >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <input type="submit" id="sbn"value="Login">
+            
+        </a>
+        <!-- <div id="sbn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div> -->
+        </form>
+      </div>
+    </div>
+   <!-- <script>
+    const btn= document.getElementById("btn");
+    btn.addEventListener("click",function(){
+        document.location.href="make_payment.html";
+    });
+   </script>  -->
+</body>
+
+</html>
